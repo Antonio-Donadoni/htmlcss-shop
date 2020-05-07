@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ body {
+   background-color: lightgrey;
+   background-image: url("../img/greywall.jpg");
+ }
+
+.product {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+
+ }
+.product img {
+  border: outset 2px darkgrey;
+}
+.product:last-child {
+  margin-right: 0;
+}
+
+ .container {
+   margin-left: 25%;
+   margin-right: 25%;
+ }
+
+.row {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.discount {
+  position: absolute;
+    top: 0;
+    right:0;
+  padding: 3px;
+  padding-left: 7px;
+  font-weight: bold;
+  border-bottom-left-radius: 25%;
+
+}
+
+.red{
+  background-color: #EB2227;
+  border-top: solid 2px #a9191c;
+  border-right: solid 2px #751114;
+}
+
+.green  {
+  background-color: #0f0;
+  border-top: solid 2px #14cc60;
+  border-right: solid 2px #036d19;
+
+}
+
+.heart {
+  position: absolute;
+   bottom: 10px;
+   left: 50%;
+  margin-left: -12px;
+  color: #EB2227;
+  font-size: 150%;
+  display:none;
+  text-shadow: 2px 2px #751114;
+}
+.product:hover .heart {
+  display: block;
+ }
